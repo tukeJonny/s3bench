@@ -1,0 +1,4 @@
+s3.accessKey="access key here"
+s3.secretKey="secret key here"
+s3.endpoint="endpoint here"
+bench.reportDir="report file dir here"
