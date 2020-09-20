@@ -7,12 +7,12 @@
 
 (def ^:private csv-stats (atom ()))
 
-(def ^:private intermediate-stats-fmt "%4d\t%10d\t%13.3f\t%13.3f\t%13.3f\t%10.3f\t%14.3f\t%14.3f\t%14.3f\t%14.3f\t%3d")
+(def ^:private intermediate-stats-fmt "%4d\t%7d\t%13.3f\t%13.3f\t%13.3f\t%10.3f\t%14.3f\t%14.3f\t%14.3f\t%14.3f\t%3d")
 
 (defn report-intermediate-stats
   [time written-bytes latencies]
   {:pre [(> written-bytes 0) (> (count latencies) 0)]}
-  (println "time\twritten[B]\tmax-lat[msec]\tmin-lat[msec]\tavg-lat[msec]\tstddev-lat\tlat(p25)[msec]\tlat(p50)[msec]\tlat(p75)[msec]\tlat(p99)[msec]\terr")
+  (println "time\tsize[B]\tmax-lat[msec]\tmin-lat[msec]\tavg-lat[msec]\tstddev-lat\tlat(p25)[msec]\tlat(p50)[msec]\tlat(p75)[msec]\tlat(p99)[msec]\terr")
   (let [stats (array-map
                :time time
                :written-bytes written-bytes

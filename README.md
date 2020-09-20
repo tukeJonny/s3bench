@@ -10,66 +10,66 @@ Benchmarker for Amazon S3 compatible object storage written in clojure.
 
 ```
 $ lein run
-9 20, 2020 2:56:46 午後 clojure.tools.logging$eval218$fn__223 invoke
+9 20, 2020 3:37:33 午後 clojure.tools.logging$eval218$fn__223 invoke
 情報: [!] Start benchmarking !!
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       200            897.000         292.000         642.250      219.165             292.000         690.000         690.000         793.500    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       700           1351.000         204.000         328.857      294.413             217.000         227.000         237.500         941.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       250           1166.000         262.000         609.000      314.182             312.000         482.500         627.500         909.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       550           1320.000         200.000         490.636      408.585             216.500         238.500         585.500        1304.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       800            433.000         202.000         233.438       52.908             210.000         215.000         230.000         341.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-      1000            275.000         202.000         221.650       20.338             207.000         213.000         225.000         268.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       900            234.000         203.000         218.278        7.929             213.000         217.000         222.500         232.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       850            248.000         220.000         237.941        8.980             231.000         241.000         245.000         248.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       750            350.000         206.000         250.200       36.708             215.000         245.000         269.000         313.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       600            538.000         212.000         287.583      108.656             226.000         243.000         263.000         527.500    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       650            887.000         204.000         359.385      217.278             214.000         222.000         401.500         754.500    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       700            549.000         201.000         266.357       82.568             221.500         245.000         271.500         420.000    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       300            912.000         290.000         519.667      198.223             345.000         419.000         548.500         749.500    0
-written[B]      max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
-       500           1020.000         258.000         427.200      220.152             268.500         338.000         457.500         788.500    0
-9 20, 2020 2:57:01 午後 clojure.tools.logging$eval218$fn__223 invoke
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   1        400       662.000         216.000         440.750      221.260             217.000         223.000         662.000         662.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   2       1000       228.000         210.000         219.150        5.952             213.000         220.000         223.000         228.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   3        800       310.000         203.000         226.500       23.917             213.000         222.000         229.000         275.500    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   4        900       464.000         199.000         237.333       59.643             211.500         215.000         230.000         379.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   5        900       227.000         199.000         213.556        7.440             208.500         212.000         218.500         226.500    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   6        900       443.000         200.000         222.833       53.835             203.000         209.000         215.000         333.500    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   7        750       448.000         201.000         239.600       59.498             210.500         218.000         234.000         361.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   8        800      1202.000         199.000         279.813      238.473             203.000         216.000         231.000         720.500    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+   9        850       257.000         214.000         230.412       12.277             222.000         228.000         231.500         256.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+  10        950       247.000         197.000         221.053       14.066             209.500         218.000         235.000         244.500    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+  11        800       254.000         200.000         219.688       15.755             205.000         215.000         224.000         251.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+  12        800       537.000         201.000         253.500       76.591             220.000         227.000         249.000         419.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+  13        650      1310.000         203.000         335.538      291.819             212.500         228.000         263.000         911.000    0
+time    size[B] max-lat[msec]   min-lat[msec]   avg-lat[msec]   stddev-lat      lat(p25)[msec]  lat(p50)[msec]  lat(p75)[msec]  lat(p99)[msec]  err
+  14        950       243.000         200.000         213.789        8.983             207.500         212.000         215.000         233.500    0
+9 20, 2020 3:37:48 午後 clojure.tools.logging$eval218$fn__223 invoke
 情報: [-] Shutdown workers ...
-9 20, 2020 2:57:01 午後 clojure.tools.logging$eval218$fn__223 invoke
+9 20, 2020 3:37:48 午後 clojure.tools.logging$eval218$fn__223 invoke
 情報: [-] Shutdown reporter ...
 ========== Final Result ==========
-Written: 8750 [Bytes]
+Written: 11450 [Bytes]
 Throughput:
-    Total:           546.875 [Bytes/sec]
+    Total:           715.625 [Bytes/sec]
     Max:             1000.000 [Bytes/sec]
-    Min:             200.000 [Bytes/sec]
-    Avg              625.000 [Bytes/sec]
-    Stddev:          235.091
-    Percentile(25%): 400.000 [Bytes/sec]
-    Percentile(50%): 650.000 [Bytes/sec]
-    Percentile(75%): 775.000 [Bytes/sec]
-    Percentile(99%): 950.000 [Bytes/sec]
+    Min:             400.000 [Bytes/sec]
+    Avg              817.857 [Bytes/sec]
+    Stddev:          145.905
+    Percentile(25%): 775.000 [Bytes/sec]
+    Percentile(50%): 800.000 [Bytes/sec]
+    Percentile(75%): 900.000 [Bytes/sec]
+    Percentile(99%): 975.000 [Bytes/sec]
 Latency:
-    Max:             1351.000 [msec]
-    Min:             200.000 [msec]
-    Avg              312.869 [msec]
-    Stddev:          208.976
-    Percentile(25%): 217.000 [msec]
-    Percentile(50%): 232.000 [msec]
-    Percentile(75%): 271.500 [msec]
-    Percentile(99%): 1304.000 [msec]
+    Max:             1310.000 [msec]
+    Min:             197.000 [msec]
+    Avg              243.856 [msec]
+    Stddev:          118.544
+    Percentile(25%): 211.000 [msec]
+    Percentile(50%): 218.000 [msec]
+    Percentile(75%): 229.000 [msec]
+    Percentile(99%): 662.000 [msec]
 Err: 0
 
-9 20, 2020 2:57:01 午後 clojure.tools.logging$eval218$fn__223 invoke
+9 20, 2020 3:37:48 午後 clojure.tools.logging$eval218$fn__223 invoke
 情報: [*] Cleaning objects ...
-9 20, 2020 2:58:07 午後 clojure.tools.logging$eval218$fn__223 invoke
+9 20, 2020 3:39:14 午後 clojure.tools.logging$eval218$fn__223 invoke
 情報: [-] Shutdown s3bench.
 ```
 
